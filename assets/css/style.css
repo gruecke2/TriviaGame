@@ -1,0 +1,35 @@
+body{
+    background-image: url("../images/lined_paper.png");
+}
+
+.container{
+    align-content: center;
+    border-style: dotted;
+    margin-top: 2em;
+    background: rgba(71, 68, 231, 0.274);
+}
+
+h1{
+    font-family: Fugaz one;
+    font-size: 4em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+h3{
+    font-family: Forum;
+    font-size: 2em;
+}
+
+.row{
+    text-align: center;    
+}
+
+.strtBtn{
+    text-align: center;
+}
+
+.btn{
+    margin: .3em;
+}
+
