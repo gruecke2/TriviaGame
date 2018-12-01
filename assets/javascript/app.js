@@ -28,10 +28,19 @@ $(document).ready(function() {
     '"For those about to rock, _______!"'
   ];
 
+  var songs = [
+    "Don't Stop Believing by Journey",
+    "Stacy's Mom by Fountains of Wayne",
+    "The Boys are Back in Town by Thin Lizzy",
+    "Good Times Bad Times by Led Zeppelin",
+    "I Wanna Rock n' Roll All Nite by KISS",
+    "For Those About to Rock (We Salute You) by AC/DC"
+  ]
+
   //Hard coded answers, comments reflect the correct option
   var answers = [
     ["girl", "boy", "world", "man"], //0
-    ["Stacy's bomb", "Stacy's mom", "sugar sugar", "Mickey"], //1
+    ["Stacy's bomb", "Stacy's mom", "Jacie's Mom", "My girl"], //1
     ["in town", "in the saddle again", "in black", "and at it again"], //0
     ["to love again", "to rock", "to be good", "to be a man"], //3
     [
@@ -136,8 +145,9 @@ $(document).ready(function() {
     $(".splash").show();
     //clock.stop();
 
-    var txt = correct ? "Correct!" : "Incorrect :(";
-    result.html("<h2>"+txt+"</h2>");
+    var txt = correct ? "Correct!\n" : "Incorrect :(\n";
+    result.html("<h2>"+txt+"</h2><br><h2>"+
+      songs[clock.questionNumber]+"</h2>");
     imgTag.attr("src", imgLinks[qNum]);
     $("#message").append(result);
     $("#splashImg").append(imgTag);
@@ -202,6 +212,9 @@ $(document).ready(function() {
     clock.questionNumber = 0;
   }
 
+  /**
+   * Event listeners
+   */
   $(ans1).on("click", function() {
     if (clockrunning) evaluate(0);
   });
