@@ -1,19 +1,24 @@
 body{
-    background-image: url("../images/lined_paper.png");
+    background-image: url("../images/musicnotes.jpg");
 }
 
 .container{
     align-content: center;
     border-style: dotted;
     margin-top: 2em;
-    background: rgba(71, 68, 231, 0.274);
+    background: rgba(247, 168, 50, 0.911);
 }
 
 h1{
     font-family: Fugaz one;
     font-size: 4em;
-    margin-top: .5em;
-    margin-bottom: 1em;
+    margin-top: .4em;
+    margin-bottom: .5em;
+}
+
+#question{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
 }
 
 h3{
@@ -31,5 +36,28 @@ h3{
 
 .btn{
     margin: .3em;
+}
+
+#options:hover{
+    cursor: pointer;
+    border-style: dotted;
+    border-color: black;
+}
+
+#options{
+    font-size: 2em;
+    font-family: Forum;
+}
+
+.splash{
+    text-align: center;
+
+}
+
+img.splash{
+    width: 25em;
+    height: 25em;
+    margin: 0 auto;
+    margin-bottom: 2em;
 }
 
